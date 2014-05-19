@@ -1,0 +1,11 @@
+//install mongodb adapter for PHP using PECL
+
+//in case of php adapter not working
+//Remove lock file.
+sudo rm /var/lib/mongodb/mongod.lock
+
+//Repair mongodb.
+mongod --repair 
+
+//start mongodb.
+sudo service mongod start
